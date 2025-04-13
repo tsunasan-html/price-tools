@@ -1,0 +1,43 @@
+.table {
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.total_text {
+  background-color: #bba170;
+  color: white;
+}
+
+.totalPrice {
+  padding: 1.2rem 0;
+  font-weight: 600;
+  
+}
+.totalPrice span {
+  font-size: 17px;
+}
+
+
+.result_top {
+  border: 1px solid black;
+  padding: 1.2rem 0;
+}
+
+.result_division_left {
+  padding: 10px 9px;
+}
+.result_division_left span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  
+}
+
+.result_division_right {
+  font-size: 14px;
+  font-weight: 600;
+}
+.result_division_left span {
+  display: block;
+}
