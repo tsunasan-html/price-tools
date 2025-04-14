@@ -155,6 +155,15 @@ const Aga = () => {
         <td className="price_per_once"><small>-</small></td>
         <td className="price_per_once"><small>-</small></td>
       </tr>
+      <tr>
+        <td className="td__text" colSpan='6'>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, temporibus!</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, unde.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, perspiciatis?</li>
+          </ul>
+        </td>
+      </tr>
 
       </tbody>
       </table>
