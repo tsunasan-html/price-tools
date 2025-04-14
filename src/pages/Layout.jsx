@@ -3,11 +3,14 @@ import { Outlet } from 'react-router-dom'
 import Total from '../components/Total'
 import selectionRules from '../data/selectionRules';
 import Navigation from '../components/Navigation';
+import useIsMobile from '../hooks/useIsMobile';
+import PCOnlyMessage from '../components/PCOnlyMessage'
 
 
 const Layout = () => {
   const [checkedItems, setCheckedItems] = useState({});
   const [total, setTotal] = useState(0);
+  const isMobile = useIsMobile(1000)
 
   const resetCheckboxes = () => {
     setCheckedItems({});
@@ -51,6 +54,10 @@ const Layout = () => {
       }
     });
   };
+
+  if (isMobile) {
+    return <PCOnlyMessage />
+  }
 
   return (
     <div style={{ display: 'flex', minHeight: '100vh'}}>
