@@ -7,12 +7,14 @@ const Datsumo = () => {
   const datsumo02 = 'datsumo02';
   const datsumo03 = 'datsumo03';
   const datsumo04 = 'datsumo04';
+  const datsumo05 = 'datsumo05';
+  const datsumo06 = 'datsumo06';
   const single = 'single';
   const multi = 'multi';
 
   return (
     <div>
-      <h3>DATSUMO</h3>
+      <h3 style={{paddingBottom: '.3rem'}}>DATSUMO</h3>
       <table>
       <tbody>
       <tr>
@@ -357,7 +359,101 @@ const Datsumo = () => {
         <td className="price_per_once"><small>-</small></td>
         <td className="price_per_once"><small>-</small></td>
       </tr>
-      
+      <tr>
+      <td  className="part_name" rowSpan="2" >SKINCARE A</td>
+      <td className={`price_list ${checkedItems["datsumo_021"] ? 'checked-cell' : ''}`}>
+        <label>
+        <input 
+        type="checkbox" 
+        name="datsumo_021"
+        data-group={datsumo05}
+        data-type={single}
+        data-price="32400" 
+        onChange={onCheckboxChange}
+        checked={checkedItems["datsumo_021"] || false}
+        />
+        <span>32,400<small>円</small></span>
+        </label>
+      </td>
+      <td className={`price_list ${checkedItems["datsumo_022"] ? 'checked-cell' : ''}`}>
+        <label>
+        <input 
+        type="checkbox" 
+        name="datsumo_022"
+        data-group={datsumo05}
+        data-type={single}
+        data-price="39800" 
+        onChange={onCheckboxChange}
+        checked={checkedItems["datsumo_022"] || false}
+        />
+        <span>39,800<small>円</small></span>
+        </label>
+      </td>
+      <td className={`price_list ${checkedItems["datsumo_023"] ? 'checked-cell' : ''}`}>
+        <label>
+        <input 
+        type="checkbox" 
+        name="datsumo_023"
+        data-group={datsumo05}
+        data-type={single}
+        data-price="68800" 
+        onChange={onCheckboxChange}
+        checked={checkedItems["datsumo_023"] || false}
+        />
+        <span>68,800<small>円</small></span>
+        </label>
+      </td>
+      </tr>
+      <tr>
+        <td className="price_per_once"><small>-</small></td>
+        <td className="price_per_once"><small>-</small></td>
+        <td className="price_per_once"><small>-</small></td>
+      </tr>
+      <tr>
+      <td  className="part_name" rowSpan="2" >笑気麻酔</td>
+      <td className={`price_list ${checkedItems["datsumo_026"] ? 'checked-cell' : ''}`}>
+        <label>
+        <input 
+        type="checkbox" 
+        name="datsumo_026"
+        data-group={datsumo06}
+        data-type={single}
+        data-price="32400" 
+        onChange={onCheckboxChange}
+        checked={checkedItems["datsumo_026"] || false}
+        />
+        <span>32,400<small>円</small></span>
+        </label>
+      </td>
+      <td className={`price_list ${checkedItems["datsumo_027"] ? 'checked-cell' : ''}`}>
+        <label>
+        <input 
+        type="checkbox" 
+        name="datsumo_027"
+        data-group={datsumo06}
+        data-type={single}
+        data-price="39800" 
+        onChange={onCheckboxChange}
+        checked={checkedItems["datsumo_027"] || false}
+        />
+        <span>39,800<small>円</small></span>
+        </label>
+      </td>
+      </tr>
+      <tr>
+        <td className="price_per_once"><small>-</small></td>
+        <td className="price_per_once"><small>-</small></td>
+      </tr>
+
+      <tr>
+        <td className="td__text" colSpan='6'>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, temporibus!</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, unde.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, perspiciatis?</li>
+          </ul>
+        </td>
+      </tr>
       </tbody>
       </table>
     </div>

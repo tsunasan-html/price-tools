@@ -127,3 +127,10 @@ td input[type=checkbox] {
   box-sizing: border-box;
   padding: 2px 10px;
 }
+
+.td__text {
+  padding: 1rem 0;
+}
+.td__text li {
+  padding: .2rem 0;
+}

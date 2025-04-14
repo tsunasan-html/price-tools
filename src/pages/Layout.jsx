@@ -9,6 +9,11 @@ const Layout = () => {
   const [checkedItems, setCheckedItems] = useState({});
   const [total, setTotal] = useState(0);
 
+  const resetCheckboxes = () => {
+    setCheckedItems({});
+    setTotal(0);
+  };
+
   const handleCheckboxChange = (event) => {
     const name = event.target.name;
     const price = Number(event.target.getAttribute('data-price'));
@@ -58,12 +63,13 @@ const Layout = () => {
       <main style={{ flex: 4, padding: '2rem', background: 'rgb(249, 249, 249)' }}>
         <Outlet context={{ 
           onCheckboxChange: handleCheckboxChange, 
-          checkedItems 
+          checkedItems ,
+          resetCheckboxes
         }} />
       </main>
 
       <div style={{ textAlign: 'center', flex: 1, padding: '2rem 2rem 2rem 0', background: 'rgb(249, 249, 249)'}}>
-        <Total totalPrice={total} />
+        <Total totalPrice={total} resetCheckboxes={resetCheckboxes}/>
       </div>
     </div>
   )

@@ -33,6 +33,24 @@ const selectionRules = {
     ]
   },
 
+  datsumo05: {
+    single: [
+      'datsumo_021', 'datsumo_022', 'datsumo_023'
+    ],
+    multi: [
+      ''
+    ]
+  },
+
+  datsumo06: {
+    single: [
+      'datsumo_026', 'datsumo_027'
+    ],
+    multi: [
+      ''
+    ]
+  },
+
 
 
   skincare01: {

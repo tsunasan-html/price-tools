@@ -1,8 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
 import styles from './Total.module.css';
+import { RiResetLeftFill } from "react-icons/ri";
 
-const Total = ({ totalPrice }) => {
+const Total = ({ totalPrice, resetCheckboxes }) => {
   const [installments, setInstallments] = useState(1);
   const [dividedPrice, setDividedPrice] = useState(0);
   const [monthlyPrice, setMonthlyPrice] = useState(0);
@@ -78,6 +79,25 @@ const Total = ({ totalPrice }) => {
           </tr>
         </tbody>
       </table>
+      <div style={{display: 'flex', justifyContent: 'end'}}>
+        <button onClick={resetCheckboxes}
+        style={{
+          marginTop: '1rem',
+          padding: '0.5rem 1rem',
+          backgroundColor: 'rgb(199, 86, 86)',
+          color: '#fff',
+          border: 'none',
+          borderRadius: '2px',
+          cursor: 'pointer',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem',
+        }}
+      >
+        <RiResetLeftFill />
+        Reset
+        </button>
+      </div>
     </div>
   );
 };
