@@ -49,15 +49,16 @@ const Total = ({ totalPrice }) => {
             <th className={styles.result_top}>合計</th>
           </tr>
           <tr>
-            <td 
+            <td style={{ background: "#fff" }}
             className={styles.totalPrice}><span>{totalPrice === 0 ? '0' : `${totalPrice.toLocaleString()}`}<small>円</small></span></td>
           </tr>
         </tbody>
       </table>
-      <table style={{ borderTop: 'none' }} className={styles.table}>
+      <table style={{ borderTop: 'none', background: '#F5F5F5' }} className={styles.table}>
         <tbody>
           <tr>
-            <th className={styles.result_division_left}>
+            <th style={{ borderRight: 'none'}}
+            className={styles.result_division_left}>
               <span>支払回数</span>
               <select value={installments} onChange={handleChange}>
                 {Object.keys(rate).map((count) => (
@@ -67,7 +68,7 @@ const Total = ({ totalPrice }) => {
                 ))}
               </select>
             </th>
-            <th className={styles.result_division_left}>
+            <th style={{ borderLeft: 'none'}} className={styles.result_division_left}>
               <span>月々分割料金</span>
              
               <span>

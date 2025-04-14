@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Outlet, NavLink  } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import Total from '../components/Total'
 import selectionRules from '../data/selectionRules';
+import Navigation from '../components/Navigation';
 
 
 const Layout = () => {
@@ -51,26 +52,7 @@ const Layout = () => {
       <aside style={ {padding: '2rem 0 2rem 2rem', color: 'rgb(249, 249, 249)'}}
         className='sidebar'>
         <h3>Treatment List</h3>
-        <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem', paddingTop: '.5rem' }}>
-          <div>
-            <NavLink 
-              to="/datsumo"
-              className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}
-            ><span>DATSUMO</span></NavLink>
-          </div>
-          <div>
-            <NavLink 
-              to="/skincare"
-              className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}
-            ><span>SKINCARE</span></NavLink>
-          </div>
-          <div>
-            <NavLink 
-              to="/aga"
-              className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}
-            ><span>AGA</span></NavLink>
-          </div>
-        </nav>
+        <Navigation />
       </aside>
 
       <main style={{ flex: 4, padding: '2rem', background: 'rgb(249, 249, 249)' }}>

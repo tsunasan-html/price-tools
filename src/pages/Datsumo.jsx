@@ -12,7 +12,7 @@ const Datsumo = () => {
 
   return (
     <div>
-      <h3>DATSUMO<span style={{color: '#C75656'}}> ※随時更新中</span></h3>
+      <h3>DATSUMO</h3>
       <table>
       <tbody>
       <tr>
