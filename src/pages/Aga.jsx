@@ -74,7 +74,7 @@ const Aga = () => {
         type="checkbox" 
         name="aga_004"
         data-group={aga01}
-        data-type={multi}    
+        data-type={single}    
         data-price="90800" 
         onChange={onCheckboxChange}
         checked={checkedItems["aga_004"] || false}
@@ -141,7 +141,7 @@ const Aga = () => {
         type="checkbox" 
         name="aga_008"
         data-group={aga02}
-        data-type={multi}    
+        data-type={single}    
         data-price="90800" 
         onChange={onCheckboxChange}
         checked={checkedItems["aga_008"] || false}
